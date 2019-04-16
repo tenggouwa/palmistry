@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Index from './views/index.vue'
+import UpdateImage from './views/updateImage.vue'
+import Computing from './views/computing.vue'
 // import Login from './views/login/index.vue'
 
 Vue.use(Router)
@@ -11,8 +13,18 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'Index',
+      component: Index
+    },
+    {
+        path: '/updateImage',
+        name: 'UpdateImage',
+        component: UpdateImage
+    },
+    {
+        path: '/computing',
+        name: 'Computing',
+        component: Computing
     },
     // {
     //   path: '/login',
